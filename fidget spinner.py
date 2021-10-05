@@ -1,15 +1,32 @@
 from turtle import *
 state = {'turn': 0}
-def spinner():
+# def spinner():
+#     clear()
+#     angle = state['turn']/10
+#     right(angle)
+#     forward(100)
+#     dot(120, 'red')
+#     back(100)
+#     right(120)
+#     forward(100)
+#     dot(120, 'gray')
+#     back(100)
+#     right(120)
+#     forward(100)
+#     dot(120, 'violet')
+#     back(100)
+#     right(120)
+#     update()
+def fidget():
     clear()
     angle = state['turn']/10
     right(angle)
     forward(100)
-    dot(120, 'yellow')
+    dot(120, 'red')
     back(100)
     right(120)
     forward(100)
-    dot(120, 'pink')
+    dot(120, 'gray')
     back(100)
     right(120)
     forward(100)
@@ -21,7 +38,7 @@ def animate():
     if state['turn']>0:
         state['turn']-=1
 
-    spinner()
+    fidget()
     ontimer(animate, 20)
 def flick():
     state['turn']+=10
